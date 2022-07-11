@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #1b143f;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+footer{text-align: center;
+    color: white;
+    position: relative;
+    height: 250px;
+    background-color: #271d4c;
+}
+
+/* Ecris en dessous */
+
+/* version tablette */
+@media only screen and (min-width:600px) and (max-width:800px) { 
+    span.suitenom{
+        visibility: hidden;
+    }
+    span.suiteprenom{
+        visibility: hidden;
+    }
+    #logoPc{
+        content: url("../img/bsprojet_noir.png");
+
+    }
+}
+/* version téléphone */
+@media screen and (max-width:600px){
+    #logoPc{
+        content: url("../img/bsprojet_orange.png");
+
+    }
+}
+h1{
+    background-color: #271d4c;
+    color: white;
+    text-shadow: blue 2px 5px;
+    text-align: center;
+    font-family: cursive;
+}
+
+#fusee:hover {
+    background-color: gold;
+    transition: transform 0.5s;
+    transform: rotate(360deg);
+}
+
+#fusee{
+    margin: auto;
+    display: flex;
+      }
+
+p{
+    background-color: #271d4c;
+    height: 200px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    margin: auto;
+    margin-top: 200px;
+}
+
+
+#grid{
+    display: grid;
+    width:300px ;
+    margin: auto;
+}
+#grid :nth-child(1){
+    grid-area: 1/2;
+}
+#grid :nth-child(2){
+    grid-area: 2/1;
+    transform: translate(40px,0);
+}
+#grid :nth-child(3){
+    grid-area: 2/3;
+    transform: translate(-40px,0);
+}
+#grid :nth-child(4){
+    grid-area: 3/1;
+}
+#grid :nth-child(5){
+    grid-area: 3/2;
+}
+#grid :nth-child(6){
+    grid-area: 3/3;
+}
+/* grid est le parent et aliens sont les enfants */

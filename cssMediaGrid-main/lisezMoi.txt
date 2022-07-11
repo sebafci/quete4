@@ -1,0 +1,247 @@
+Faction Front: Libre de modifier le footer
+
+Faction Back: None
+
+Faction Designer: Remplace l'image bg par un autre background (même theme et taille)
+
+Fraichement débarqué sur la plage, à l'ouest de Reactopia et suite à l'intervention des moussaillons pour reconstituer les animaux du capitaine Ari. Ari et les moussaillons ont festoyé autour d'un feu de camp. Les moussaillons sont encore en quête de faction.
+La coutume oblige:
+Lorsque qu'elle sonne.. Lorsque la cloche sonne dans votre rêve, cela veut dire que l'autodidacte vous appelle, vous devez vous rendre à Startopia et y vivre pendant 8 mois pour commencer votre quête de faction,vous découvrir, découvrir votre faction. 
+Malheureusement beaucoup de personnes ne reviennent pas de Startopia. Beaucoup sont DDOS ou intégrent une faction différente de leurs proches...
+Pardon ? Ma faction ? Sacre-bleu, ma faction attribuée ne te regarde pas moussaillons!
+
+Le lendemain matin.. 
+BOUUUMMMMMMMMMMMMMMMMMMMMMMMMM (ceci est une explosion)
+Un moussaillon à piqué le trésor du capitaine Ari et s'est enfui à l'aide du portail, malheureusement il à verouiller le portail de téléportation.
+L'historique du portail de téléportation indique Picktopia.
+Le capitaine Ari en colére et determiné déçida de poursuivre le moussaillon jusqu'à Picktopia.
+Il n'y a qu'un seul moyen de rejoindre ce moussaillon,marcher pendant 30 minutes ou rejoindre la colline de loinAurevoir pour utiliser la fusée.
+
+Le capitaine sauta dans la fusée....
+
+===>
+    - vous devez adapter le contenu du h1 avec vos nom/prénom x
+    - vous devez trouver le moyen de placer 2 espaces entre vos nom/prénom x
+    - affichez certaines lettres de vos nom/prénom en fonction de la taille d'affichage (ordinateur,tablette,téléphone) x
+    - créez et affichez votre propre logo responsive en 3 versions (ordinateur,tablette,téléphone) x
+    => VOIR EXEMPLES.png
+    - affichez votre logo dans l'onglet du navigateur x
+
+    -appliquez la couleur #271d4c au background de votre h1 x 
+    -appliquez la couleur blanche à votre h1 x
+    -appliquez une ombre à votre h1 x
+    -centrez votre h1 x
+    -attribuez une nouvelle font à votre h1 (libre) x
+
+    -Centrez votre image fusée x
+    -Donnez un :hover à votre fusée (rotation 360deg avec une transition de 0.5s) x
+
+
+    -Vous devez créer 3 rangées d'ALIEN à l'aide de GRID x
+
+    Vous pouvez donner un nom à vos images ALIEN (class ou id)
+    Triez les aliens:
+    -rangée 1 = 3 ALIEN bleu (alien3) x
+    -rangée 2 = 2 ALIEN vert (alien2) x
+    -rangée 3 = 1 ALIEN violet (alien1) x
+    Centrez les Aliens au millieu de la page web x
+    En version *téléphone il ne doit rester qu'un ALIEN (alien violet)
+
+    => ATTENTION Vous ne pouvez pas supprimer les images ALIEN
+    ou en ajouter de nouvelles ou modifier leurs places avec HTML / Completez la balise ALT des images
+
+
+    - vous devez adapter le contenu du paragraphe (ADAPT)(intégrez un lorem ipsum) x
+    - appliquez la couleur #271d4c au background de votre p x
+    - changez la dimension de votre p (Largeur:200pixels)(Hauteur:100pixels) x
+    - appliquez la couleur blanche à votre texte x
+    - appliquez une bordure à votre p x
+    - centrez votre paragraphe x
+    
+
+    footer =>
+    
+    - intégrez une icone correspondant au réseau LINKEDIN (dimension 80x80) x
+    - Créez un lien sur votre image (lors du click d'image) redirigant vers votre profil LINKEDIN à jour(lien linkedin) X
+    - intégrez votre CV à jour (redirection dans une nouvelle page)x
+    - intégrez votre copyright x
+    
+Ecrivez au moins 3 commentaires* x
+
+
+
+--- Quand tu as finis =>
+Préviens moi
+Vas sur le site Github.com
+Créer un nouveau référentiel privé
+Nom du référentiel: "quete4css"
+Upload ton travail
+
+ENJOY
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------
+HTML
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Ari en fuite"</title>
+    <link rel="icon" href="bsprojet.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    
+    <header>
+        <img id="logoPc" src="img/bsprojet_bleu.png" alt="logo pc">
+        <h1>B<span class="suitenom">uils</span> &nbsp;S<span class="suiteprenom">ébastien</span></h1>
+    </header>
+
+    <section>
+        <img id="fusee" src="./img/fusee.png" alt="fusée">
+
+        <div id="grid">
+            <img src="./img/alien1.png" alt="alien1">
+            <img src="./img/alien2.png" alt="alien2">
+            <img src="./img/alien2.png" alt="alien3">
+            <img src="./img/alien3.png" alt="alien4">
+            <img src="./img/alien3.png" alt="alien5">
+            <img src="./img/alien3.png" alt="alien6">
+        </div>
+        <!-- lorem ipsum créé en ligne -->
+        <p>Fouqué avait eu des projets de mariage, des amours malheureuses ; de longues confidences à ce sujet avaient rempli les conversations des deux amis.
+             Après avoir trouvé le bonheur trop tôt, Fouqué s’était aperçu qu’il n’était pas seul aimé.</p>
+    </section>
+    
+    <footer>
+        &copy; 2022 B.S PROJET
+         <a href="https://fr.linkedin.com/"><img src="ico.linkedin.80x80.png" alt="linkedin">
+         <a href="Sébastien BUILS cv.dev.pdf"><img src="cv-icone80x80.ico" alt="monCv">
+         </a>
+    </footer>
+</body>
+</html>
+
+
+-------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+CSS
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #1b143f;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+footer{text-align: center;
+    color: white;
+    position: relative;
+    height: 250px;
+    background-color: #271d4c;
+}
+
+/* Ecris en dessous */
+
+/* version tablette */
+@media only screen and (min-width:600px) and (max-width:800px) { 
+    span.suitenom{
+        visibility: hidden;
+    }
+    span.suiteprenom{
+        visibility: hidden;
+    }
+    #logoPc{
+        content: url("../img/bsprojet_noir.png");
+
+    }
+}
+/* version téléphone */
+@media screen and (max-width:600px){
+    #logoPc{
+        content: url("../img/bsprojet_orange.png");
+
+    }
+}
+h1{
+    background-color: #271d4c;
+    color: white;
+    text-shadow: blue 2px 5px;
+    text-align: center;
+    font-family: cursive;
+}
+
+#fusee:hover {
+    background-color: gold;
+    transition: transform 0.5s;
+    transform: rotate(360deg);
+}
+
+#fusee{
+    margin: auto;
+    display: flex;
+      }
+
+p{
+    background-color: #271d4c;
+    height: 200px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    margin: auto;
+    margin-top: 200px;
+}
+
+
+#grid{
+    display: grid;
+    width:300px ;
+    margin: auto;
+}
+#grid :nth-child(1){
+    grid-area: 1/2;
+}
+#grid :nth-child(2){
+    grid-area: 2/1;
+    transform: translate(40px,0);
+}
+#grid :nth-child(3){
+    grid-area: 2/3;
+    transform: translate(-40px,0);
+}
+#grid :nth-child(4){
+    grid-area: 3/1;
+}
+#grid :nth-child(5){
+    grid-area: 3/2;
+}
+#grid :nth-child(6){
+    grid-area: 3/3;
+}
+/* grid est le parent et aliens sont les enfants */
+
+#p {     background-color: #271d4c;
+     width: 200px;
+     height: 100px;
+     color: white;
+     border-style: solid;
+     text-align: center;
+     transition-duration: 0.5s;
+     margin: auto;
+     margin-top: 200px; }
